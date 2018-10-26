@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/bot-o-mat/static/media/robot-8.634c0fac.png"
   },
   {
-    "revision": "9307321cd3ba17c25ae6e4b9bed5653f",
+    "revision": "bae69fb809f02f7f60dd2764d9587523",
     "url": "/bot-o-mat/index.html"
   }
 ];
