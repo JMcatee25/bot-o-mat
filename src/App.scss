@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Chakra+Petch");
+$tenpixels: 10px;
+$align: center;
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  width: 100wh;
+  height: 90vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.taskStatus {
+  height: $tenpixels;
+  width: $tenpixels;
+  background-color: red;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.robotTasks {
+  display: flex;
+}
+.robotlist {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  justify-content: center;
+}
+.robotinfo__container {
+  display: flex;
+}
+.robot {
+  border: 1px solid black;
+  margin: 50px;
+  height: 300px;
+  width: 400px;
+  img {
+    margin-right: 15px;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+  }
+  .robotinfo {
+    text-align: $align;
+    width: 50%;
+    flex-direction: column;
+  }
+  .align {
+    text-align: $align;
+  }
+}
+.taskButton {
+  margin-left: 5px;
+}
+.title {
+  text-align: $align;
+}
